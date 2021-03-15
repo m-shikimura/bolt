@@ -1,8 +1,18 @@
+@charset "utf-8";
+
 .clearfix::after {
   content: "";
   display: block;
   clear: both;
   }
+
+a {
+  display: inline-block;
+}
+
+img {
+  vertical-align: bottom;
+}
 
 body {
   font-family: Lato;
@@ -26,8 +36,10 @@ body {
 .header {
   background-color: #fff;
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 100;
 }
 
 .header-inner {
@@ -114,6 +126,10 @@ body {
   font-size: 24px;
 }
 
+.latest-work__image-wrapper {
+  margin-top: 40px;
+}
+
 .latest-work__image {
   display: block;
   float: left;
@@ -129,7 +145,7 @@ body {
 }
 
 .latest-work__image:nth-child(-n+3) {
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 .latest-work__contact {
@@ -170,11 +186,14 @@ body {
 }
 
 .skills__image-wrapper {
+  display: flex;
+  justify-content: center;
   margin-top: 40px;
 }
 
 .skills__image {
-  display: inline-block;
+  float: left;
+  list-style: none;
   margin-left: 180px;
 }
 
