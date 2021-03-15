@@ -20,48 +20,67 @@
         <a class="header__contact-button" href="">Contact</a>
       </div>
     </header>
-    <main>
+    <main class="main">
       <div class="title">
         <div class="inner title-inner">
-          <h1 class="title__main-title">Bolt Theme</h1>
-          <h2 class="title__sub-title">FREE BOOTSTRAP THEMES</h2>
+          <h1 class="title__main-title title-font">Bolt Theme</h1>
+          <p class="title__sub-title title-font">FREE BOOTSTRAP THEMES</p>
         </div>
       </div>
       <section class="profile">
         <div class="inner profile-inner">
           <img src="img/iphone.png" alt="">
           <div">
-            <h2 class="profile__profile-title">WHAT WE CAN DO?</h2>
-            <p class="profile__profile-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-              <br>Lorem Ipsum has been the industry's standard dummy text ever since the
-              <br>1500s, when an unknown printer took a galley of type and scrambled it to
-              <br>make a type specimen book.</p>
+            <h2 class="profile__profile-title title-font">WHAT WE CAN DO?</h2>
+            <p class="profile__profile-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
           </div>
         </div>
       </section>
       <article class="latest-work">
         <div class="inner latest-work-inner">
-          <h2 class="latest-work__title">OUR LATEST WORK</h2>
-          <div class="latest-work__image-wrapper clearfix">
-            <img class="latest-work__image" src="img/01.jpg" alt="">
-            <img class="latest-work__image" src="img/02.jpg" alt="">
-            <img class="latest-work__image" src="img/03.jpg" alt="">
-            <img class="latest-work__image" src="img/04.jpg" alt="">
-            <img class="latest-work__image" src="img/05.jpg" alt="">
-            <img class="latest-work__image" src="img/06.jpg" alt="">
-          </div>
+          <h2 class="latest-work__title title-font">OUR LATEST WORK</h2>
+          <ur class="clearfix">
+            <li class="latest-work__image">
+              <a href="">
+                <img src="img/01.jpg" alt="">
+              </a>
+            </li>
+            <li class="latest-work__image">
+              <a href="">
+                <img src="img/02.jpg" alt="">
+              </a>
+            </li>
+            <li class="latest-work__image">
+              <a href="">
+                <img src="img/03.jpg" alt="">
+              </a>
+            </li>
+            <li class="latest-work__image">
+              <a href="">
+                <img src="img/04.jpg" alt="">
+              </a>
+            </li>
+            <li class="latest-work__image">
+              <a href="">
+                <img src="img/05.jpg" alt="">
+              </a>
+            </li>
+            <li class="latest-work__image">
+              <a href="">
+                <img src="img/06.jpg" alt="">
+              </a>
+            </li>
+          </ur>
           <div class="latest-work__contact clearfix">
-            <div class="latest-work__text">Lorem Ipsum is simply dummy text of the printing and typesetting
-              <br>industry. Lorem Ipsum has been the industry's standard dummy
-              <br>text ever.</div>
+            <div class="latest-work__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</div>
             <a class="latest-work__email-button" href="">Email Me!</a>
           </div>
         </div>
       </article>
       <section class="skills">
         <div class="inner skill-inner">
-          <h2 class="skills__title">OUR SKILLS</h2>
-          <div>
+          <h2 class="skills__title title-font">OUR SKILLS</h2>
+          <div class="skills__image-wrapper">
             <figure class="skills__image">
               <img src="img/circle_01.png" alt="">
               <figcaption class="skills__image-caption">JavaScript</figcaption>
@@ -83,16 +102,34 @@
       </section>
       <nav class="sns">
         <div class="inner sns-inner">
-          <i class="fab fa-facebook-f sns-icon"></i>
-          <i class="fab fa-dribbble sns-icon"></i>
-          <i class="fab fa-twitter sns-icon"></i>
-          <i class="fas fa-envelope sns-icon"></i>
+          <ur class="sns__icon-wrapper clearfix">
+            <li class="sns__icon">
+              <a href="">
+                <i class="fab fa-facebook-f sns__icon-color"></i>
+              </a>
+            </li>
+            <li class="sns__icon">
+              <a href="">
+                <i class="fab fa-dribbble sns__icon-color"></i>
+              </a>
+            </li>
+            <li class="sns__icon">
+              <a href="">
+                <i class="fab fa-twitter sns__icon-color"></i>
+              </a>
+            </li>
+            <li class="sns__icon">
+              <a href="">
+                <i class="fas fa-envelope sns__icon-color"></i>
+              </a>
+            </li>
+        </ur>
         </div>
       </nav>
     </main>
     <footer class="footer">
-      <div class="inner footer-inner clearfix">
-        <div class="footer__contents">Crafted with <i class="fas fa-heart"></i> by BlackTie.co</div>
+      <div class="inner footer-inner">
+        <p class="footer__contents">Crafted with <i class="fas fa-heart"></i> by BlackTie.co</p>
       </div>
     </footer>
   </body>
