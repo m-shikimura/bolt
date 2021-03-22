@@ -102,10 +102,13 @@ body {
   justify-content: space-around;
 }
 
+.profile__profile-contents {
+  margin-top: 25px;
+}
+
 .profile__profile-title {
   color: #fff;
   font-size: 24px;
-  margin-top: 25px;
 }
 
 .profile__profile-text {
@@ -122,8 +125,7 @@ body {
 }
 
 .latest-work-inner {
-  padding-top: 60px;
-  padding-bottom: 70px;
+  padding: 60px 0 70px;
 }
 
 .latest-work__title {
@@ -139,8 +141,7 @@ body {
   display: block;
   float: left;
   list-style: none;
-  margin-left:100px;
-  margin-top: 80px;
+  margin: 80px 0 0 100px;
   opacity: .7;
   transition: all .3s;
 }
@@ -266,4 +267,113 @@ body {
 
 .sns__icon:hover {
   background-color: #fff;
+}
+
+@media screen and (max-width:1199px) {
+  .inner {
+    width: 97%;
+  }
+
+  .profile-inner {
+    padding: 50px 0 25px;
+    display: inline-block;
+  }
+
+  .profile__profile-contents {
+    margin-top: 20px;
+  }
+
+  .profile__profile-text {
+    display: inline-block;
+    width: 80%;
+  }
+
+  .latest-work__image {
+    float: none;
+    margin: 0 auto;
+    width: 300px;
+  }
+
+  .latest-work__image:nth-child(3n+1) {
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+
+  .latest-work__image:first-child {
+    margin-top: 40px;
+  }
+
+  .latest-work__contact {
+    flex-direction: column;
+  }
+
+  .latest-work__text {
+    width: 70%;
+  }
+
+  .latest-work__email-button {
+    margin: 40px 0 0 0;
+  }
+
+  .skills__image-wrapper {
+    flex-direction: column;
+  }
+
+  .skills__image {
+    float: none;
+    margin: 88px 0 0 0;
+  }
+
+  .skills__image:first-child {
+    margin-top: 0;
+  }
+
+  .footer__contents {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .header__contact-button {
+    display: none;
+  }
+
+  .header__contact-icon {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #ddd;
+    display: block;
+    float: right;
+    padding: 10px;
+  }
+
+  .title-inner {
+    padding: 160px 0 130px;
+  }
+
+  .title__main-title {
+    font-size: 80px;
+  }
+
+  .profile__profile-text {
+    width: 96%;
+  }
+
+  .latest-work__text {
+    width: 85%;
+  }
+
+  .sns-inner {
+    padding: 50px 0;
+  }
+
+  .sns__icon-wrapper {
+    flex-direction: column;
+  }
+
+  .sns__icon {
+    float: none;
+    width: 100%;
+  }
+
 }
